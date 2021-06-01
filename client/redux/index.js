@@ -2,7 +2,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { createLogger } from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
 
-function appReducer(state = {}, action) {
+function appReducer(state = { foo: 'bar' }, action) {
   switch (action.type) {
     default:
       return state;
